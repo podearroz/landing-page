@@ -15,8 +15,10 @@
 
   h1,
   h2,
-  h3 {
-    @apply font-heading;
+  h3,
+  h4 {
+    @apply font-heading tracking-tight;
+    letter-spacing: -0.02em;
   }
 }
 

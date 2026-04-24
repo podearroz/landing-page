@@ -12,9 +12,9 @@ export function SectionTitle({
   light = false,
 }: SectionTitleProps) {
   return (
-    <div className={`mb-12 ${centered ? 'text-center' : ''}`}>
+    <div className={`mb-10 ${centered ? 'text-center' : ''}`}>
       <h2
-        className={`font-heading text-4xl md:text-5xl font-semibold leading-tight text-balance mb-4 ${
+        className={`font-heading text-3xl md:text-4xl font-semibold tracking-tight leading-snug text-balance mb-3 ${
           light ? 'text-white' : 'text-secondary'
         }`}
       >
@@ -22,17 +22,17 @@ export function SectionTitle({
       </h2>
       {subtitle && (
         <p
-          className={`font-body text-lg max-w-2xl leading-relaxed ${
+          className={`font-body text-base max-w-xl leading-relaxed ${
             centered ? 'mx-auto' : ''
-          } ${light ? 'text-white/80' : 'text-fg-muted'}`}
+          } ${light ? 'text-white/75' : 'text-fg-muted'}`}
         >
           {subtitle}
         </p>
       )}
       <div
-        className={`mt-5 mx-auto w-12 h-0.5 ${
-          light ? 'bg-white/50' : 'bg-primary-light'
-        } ${centered ? '' : 'ml-0'}`}
+        className={`mt-4 w-10 h-0.5 ${light ? 'bg-white/40' : 'bg-primary-light'} ${
+          centered ? 'mx-auto' : ''
+        }`}
       />
     </div>
   )

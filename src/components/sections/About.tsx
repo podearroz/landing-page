@@ -14,19 +14,17 @@ export function About() {
     <section
       id="sobre"
       ref={sectionRef as Ref<HTMLElement>}
-      className="relative py-20 md:py-28 bg-bg-warm overflow-hidden"
+      className="relative py-14 md:py-24 bg-bg-warm overflow-hidden"
     >
-      {/* Decorative watermark — logo bege clarinho */}
       <img
         src={logoWatermark}
         alt=""
         aria-hidden="true"
-        className="absolute -top-6 -right-10 w-72 h-auto opacity-30 pointer-events-none select-none"
+        className="absolute -top-4 -right-8 w-56 md:w-72 h-auto opacity-25 pointer-events-none select-none"
       />
 
       <div className="relative max-w-6xl mx-auto px-5 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 md:gap-20 items-center">
-          {/* Photo */}
+        <div className="grid md:grid-cols-2 gap-10 md:gap-20 items-center">
           <motion.div
             variants={fadeInLeft}
             initial="hidden"
@@ -36,33 +34,28 @@ export function About() {
             <ProfilePlaceholder size="medium" />
           </motion.div>
 
-          {/* Text */}
           <motion.div
             variants={stagger}
             initial="hidden"
             animate={isInView ? 'visible' : 'hidden'}
           >
             <motion.div variants={staggerItem}>
-              <SectionTitle
-                title={ABOUT.title}
-                subtitle={ABOUT.subtitle}
-                centered={false}
-              />
+              <SectionTitle title={ABOUT.title} subtitle={ABOUT.subtitle} centered={false} />
             </motion.div>
 
-            <div className="space-y-5">
+            <div className="space-y-4">
               {ABOUT.paragraphs.map((paragraph, index) => (
                 <motion.p
                   key={index}
                   variants={staggerItem}
-                  className="font-body text-fg-muted leading-relaxed text-base"
+                  className="font-body text-sm md:text-base text-fg-muted leading-relaxed"
                 >
                   {paragraph}
                 </motion.p>
               ))}
             </div>
 
-            <motion.div variants={staggerItem} className="mt-8">
+            <motion.div variants={staggerItem} className="mt-7">
               <Button
                 href={PROFESSIONAL.whatsappUrl}
                 variant="secondary"

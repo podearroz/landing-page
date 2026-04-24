@@ -16,99 +16,152 @@ export const PROFESSIONAL = {
   whatsapp: '5516981886062',
   instagram: '@psideboradias',
   instagramUrl: 'https://instagram.com/psideboradias',
-  modality: 'Presencial e on-line',
+  modality: 'Somente online',
   whatsappUrl:
     'https://wa.me/5516981886062?text=Ol%C3%A1%20D%C3%A9bora%2C%20gostaria%20de%20agendar%20uma%20consulta%20de%20psicologia.',
 }
 
 export const HERO = {
-  headline: 'Encontre o equilíbrio emocional que você merece',
+  headline: 'Ansiedade, depressão ou estresse constante?',
+  subheadline: 'Você merece apoio — e cuidar de si começa aqui.',
   subtitle:
-    'Posso te ajudar a superar os desafios da ansiedade e da depressão. Juntos vamos construir uma versão mais leve e equilibrada de você.',
+    'Atendimento psicológico online pela TCC, a abordagem com maior evidência científica da atualidade.',
   credentials: [
-    `${PROFESSIONAL.fullName} — ${PROFESSIONAL.crp}`,
-    'Psicóloga especialista em saúde mental',
-    'Atendimentos presenciais e on-line',
+    `${PROFESSIONAL.crp} · Psicóloga clínica`,
+    'Especialista em TCC — Terapia Cognitivo-Comportamental',
+    'Atendimento 100% online',
   ],
   ctaText: 'Agendar minha consulta',
 }
 
 export const ABOUT = {
-  title: 'Sobre mim',
-  subtitle: 'Um espaço seguro para você se reconectar',
+  title: 'Olá, sou a Débora',
+  subtitle: 'Psicóloga que acredita em mudanças reais.',
   paragraphs: [
-    'Sou Débora Dias, psicóloga com registro CRP 06/181371, apaixonada por acompanhar pessoas em momentos de transformação. Meu trabalho é guiado pelo compromisso com o bem-estar emocional e pelo respeito à singularidade de cada ser humano.',
-    'Os atendimentos são realizados de forma presencial ou online, adaptados à sua realidade e necessidades. Utilizo uma abordagem integrativa, combinando técnicas baseadas em evidências para oferecer um cuidado personalizado e efetivo.',
-    'Dar o primeiro passo pode parecer difícil, mas você não precisa enfrentar isso sozinho(a). Estou aqui para criar um espaço seguro, acolhedor e sem julgamentos onde você possa se reconectar consigo mesmo(a) e encontrar o equilíbrio que merece.',
+    'Trabalho com a Terapia Cognitivo-Comportamental (TCC) porque acredito em resultados concretos. Meu papel é criar um espaço seguro onde você possa entender seus padrões de pensamento e desenvolver ferramentas reais para transformar sua vida.',
+    'Os atendimentos são 100% online — com toda a segurança, sigilo e acolhimento que você merece, de onde você estiver.',
   ],
-  ctaText: 'Quero agendar uma conversa',
+  ctaText: 'Quero conversar',
 }
 
 export const BENEFITS = {
-  title: 'Benefícios da psicoterapia',
-  subtitle: 'Investir em saúde mental é o cuidado mais profundo que você pode ter consigo mesmo(a)',
+  title: 'O que muda com a terapia',
+  subtitle: 'Benefícios reais que vão além do consultório.',
   items: [
     {
       icon: RiMindMap,
       title: 'Autoconhecimento',
-      description:
-        'Compreenda melhor seus padrões de pensamento e comportamento.',
+      description: 'Entenda seus padrões de pensamento e comportamento.',
     },
     {
       icon: RiHeartLine,
-      title: 'Melhora da autoestima',
-      description:
-        'Fortaleça sua confiança e desenvolva uma relação mais saudável consigo mesmo.',
+      title: 'Autoestima',
+      description: 'Construa uma relação mais saudável e compassiva com você mesmo(a).',
     },
     {
       icon: RiLeafLine,
-      title: 'Redução da ansiedade',
-      description:
-        'Aprenda ferramentas práticas para lidar com o estresse e a ansiedade do dia a dia.',
+      title: 'Menos ansiedade',
+      description: 'Ferramentas práticas da TCC para o estresse do dia a dia.',
     },
     {
       icon: RiGroupLine,
-      title: 'Melhora nos relacionamentos',
-      description:
-        'Desenvolva habilidades sociais e vínculos mais saudáveis e significativos.',
+      title: 'Relacionamentos',
+      description: 'Vínculos mais saudáveis — com os outros e com você.',
     },
     {
       icon: RiSunLine,
-      title: 'Superação de conflitos',
-      description:
-        'Processe traumas e conflitos internos com suporte profissional e acolhedor.',
+      title: 'Superação',
+      description: 'Processe conflitos e traumas com suporte profissional.',
     },
     {
       icon: RiSparklingLine,
       title: 'Qualidade de vida',
-      description:
-        'Retome o prazer nas pequenas coisas e construa uma vida com mais leveza.',
+      description: 'Retome o prazer nas pequenas coisas com mais leveza.',
     },
   ],
 }
 
 export const METHOD = {
-  title: 'Como funciona o atendimento?',
+  title: 'TCC na prática',
   subtitle:
-    'Um processo estruturado com acolhimento, escuta ativa e ferramentas práticas para o seu crescimento.',
+    'A Terapia Cognitivo-Comportamental conecta pensamentos, emoções e comportamentos para gerar mudanças duradouras.',
   steps: [
     {
       number: '01',
-      title: 'Primeira conversa',
+      title: 'Avaliação inicial',
       description:
-        'Sem compromisso e sem julgamentos. É o momento de se conhecermos, entendermos o que você está vivendo e verificarmos se fazemos uma boa parceria terapêutica.',
+        'Primeiro nos conhecemos. Você fala sobre o que está vivendo e juntos definimos os objetivos terapêuticos.',
     },
     {
       number: '02',
-      title: 'Construção do plano',
+      title: 'Mapeamento cognitivo',
       description:
-        'A partir da sua história e necessidades, construímos juntos um plano terapêutico personalizado, com objetivos claros e abordagens adaptadas ao seu perfil.',
+        'Identificamos os padrões de pensamento que geram sofrimento — o coração da TCC.',
     },
     {
       number: '03',
-      title: 'Acompanhamento contínuo',
+      title: 'Ferramentas reais',
       description:
-        'Sessões regulares de acompanhamento onde trabalhamos suas demandas, celebramos progressos e desenvolvemos ferramentas práticas para o seu dia a dia.',
+        'Desenvolvemos recursos práticos que você aplica fora das sessões, com progresso mensurável.',
+    },
+  ],
+}
+
+export const TESTIMONIALS = {
+  title: 'O que dizem por aí',
+  subtitle: 'Histórias reais de pessoas que deram o primeiro passo.',
+  items: [
+    {
+      quote:
+        'Aprendi a identificar pensamentos que me sabotavam há anos. Hoje me sinto muito mais leve e segura nas minhas decisões.',
+      author: 'M.S.',
+      context: '28 anos · Ansiedade',
+      stars: 5,
+    },
+    {
+      quote:
+        'A terapia online foi muito mais prática do que eu imaginava. Em poucos meses percebi diferenças reais no meu dia a dia.',
+      author: 'R.C.',
+      context: '34 anos · Depressão',
+      stars: 5,
+    },
+    {
+      quote:
+        'A Débora cria um espaço de acolhimento genuíno. Me senti ouvida de verdade desde a primeira sessão.',
+      author: 'L.P.',
+      context: '42 anos · Autoconhecimento',
+      stars: 5,
+    },
+  ],
+}
+
+export const FAQ = {
+  title: 'Perguntas frequentes',
+  items: [
+    {
+      question: 'O que é a Terapia Cognitivo-Comportamental (TCC)?',
+      answer:
+        'A TCC é a abordagem com maior respaldo científico da psicologia moderna. Ela trabalha a conexão entre pensamentos, emoções e comportamentos — identificando padrões que geram sofrimento e desenvolvendo formas mais funcionais de encarar a vida.',
+    },
+    {
+      question: 'Os atendimentos são apenas online?',
+      answer:
+        'Sim, atendo exclusivamente online — por videochamada, com total segurança e sigilo. Isso permite que você faça terapia de onde estiver, com mais conforto e flexibilidade na agenda.',
+    },
+    {
+      question: 'Quantas sessões vou precisar?',
+      answer:
+        'Depende das suas demandas. A TCC é uma abordagem estruturada, muitas vezes com foco em metas claras — o que a torna mais objetiva que outras abordagens. Avaliamos isso juntos na primeira consulta.',
+    },
+    {
+      question: 'Como é a primeira consulta?',
+      answer:
+        'É uma sessão de acolhimento sem compromisso. Você conta o que está vivendo, eu explico como funciona o processo e verificamos se faz sentido seguirmos juntos. Simples assim.',
+    },
+    {
+      question: 'Meu sigilo é garantido?',
+      answer:
+        'Sim. Tudo que é compartilhado nas sessões é protegido pelo sigilo profissional, conforme o Código de Ética dos Psicólogos. Suas informações jamais são reveladas a terceiros.',
     },
   ],
 }
@@ -120,5 +173,5 @@ export const CTA_FINAL = {
 }
 
 export const FOOTER = {
-  credits: 'Site desenvolvido por Agência Digital',
+  credits: 'Design & Engenharia',
 }
