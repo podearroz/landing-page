@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 72" fill="none">
+  <!-- Floral icon: stylized flower/dove combination -->
+  <g transform="translate(4, 8)">
+    <!-- Center circle (heart of the flower) -->
+    <circle cx="28" cy="28" r="5" fill="#963C1E"/>
+    <!-- Petals -->
+    <ellipse cx="28" cy="14" rx="4" ry="8" fill="#963C1E" opacity="0.85"/>
+    <ellipse cx="28" cy="42" rx="4" ry="8" fill="#963C1E" opacity="0.85"/>
+    <ellipse cx="14" cy="28" rx="8" ry="4" fill="#963C1E" opacity="0.85"/>
+    <ellipse cx="42" cy="28" rx="8" ry="4" fill="#963C1E" opacity="0.85"/>
+    <!-- Diagonal petals (smaller) -->
+    <ellipse cx="18" cy="18" rx="3.5" ry="7" fill="#963C1E" opacity="0.6" transform="rotate(-45 18 18)"/>
+    <ellipse cx="38" cy="18" rx="3.5" ry="7" fill="#963C1E" opacity="0.6" transform="rotate(45 38 18)"/>
+    <ellipse cx="18" cy="38" rx="3.5" ry="7" fill="#963C1E" opacity="0.6" transform="rotate(45 18 38)"/>
+    <ellipse cx="38" cy="38" rx="3.5" ry="7" fill="#963C1E" opacity="0.6" transform="rotate(-45 38 38)"/>
+    <!-- Leaf accent below -->
+    <path d="M24 50 Q28 58 32 50 Q28 54 24 50Z" fill="#963C1E" opacity="0.7"/>
+  </g>
+  <!-- Text group -->
+  <g transform="translate(68, 0)">
+    <text
+      x="0" y="38"
+      font-family="'Cormorant Garamond', Georgia, serif"
+      font-size="26"
+      font-weight="600"
+      fill="#5A5A3C"
+      letter-spacing="0.5"
+    >Débora Dias</text>
+    <text
+      x="2" y="55"
+      font-family="Lato, Arial, sans-serif"
+      font-size="10"
+      font-weight="400"
+      fill="#878769"
+      letter-spacing="4"
+    >PSICÓLOGA</text>
+  </g>
+</svg>
