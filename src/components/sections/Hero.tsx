@@ -3,6 +3,7 @@ import { RiCheckLine } from 'react-icons/ri'
 import { Button } from '../ui/Button'
 import { HERO, PROFESSIONAL } from '../../constants/content'
 import { fadeInUp, fadeInLeft, fadeInRight, stagger } from '../../hooks/useScrollAnimation'
+import deboraHero from '../../assets/debora-hero.png'
 
 export function Hero() {
   return (
@@ -19,7 +20,14 @@ export function Hero() {
             animate="visible"
             className="flex justify-center order-1 md:order-2"
           >
-            <ProfilePlaceholder />
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-2.5 translate-y-2.5" />
+              <img
+                src={deboraHero}
+                alt="Débora Dias — Psicóloga"
+                className="relative w-56 sm:w-64 md:w-80 rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </motion.div>
 
           {/* Text */}
@@ -88,31 +96,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
-}
-
-export function ProfilePlaceholder({ size = 'large' }: { size?: 'large' | 'medium' }) {
-  const dim =
-    size === 'large'
-      ? 'w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80'
-      : 'w-48 h-48 sm:w-56 sm:h-56'
-
-  return (
-    <div className={`relative ${dim}`}>
-      <div className="absolute inset-0 rounded-full border border-ui-floral translate-x-2.5 translate-y-2.5" />
-      <div
-        className="relative w-full h-full rounded-full border border-ui-border flex items-center justify-center"
-        style={{ background: 'linear-gradient(135deg, #FAF7F4 0%, #F5EFE9 60%, #E8D5C4 100%)' }}
-      >
-        <div className="text-center select-none">
-          <span className="block font-heading text-5xl font-semibold text-primary-light" aria-hidden="true">
-            DD
-          </span>
-          <span className="block font-body text-[10px] text-fg-muted tracking-widest uppercase mt-1">
-            Foto
-          </span>
-        </div>
-      </div>
-    </div>
   )
 }

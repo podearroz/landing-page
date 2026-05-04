@@ -2,10 +2,10 @@ import type { Ref } from 'react'
 import { motion } from 'framer-motion'
 import { Button } from '../ui/Button'
 import { SectionTitle } from '../ui/SectionTitle'
-import { ProfilePlaceholder } from './Hero'
 import { ABOUT, PROFESSIONAL } from '../../constants/content'
 import { fadeInLeft, stagger, staggerItem, useScrollAnimation } from '../../hooks/useScrollAnimation'
 import logoWatermark from '../../assets/logo-var3.png'
+import deboraAbout from '../../assets/debora-about.png'
 
 export function About() {
   const { ref: sectionRef, isInView } = useScrollAnimation()
@@ -31,7 +31,14 @@ export function About() {
             animate={isInView ? 'visible' : 'hidden'}
             className="flex justify-center"
           >
-            <ProfilePlaceholder size="medium" />
+            <div className="relative">
+              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-2.5 translate-y-2.5" />
+              <img
+                src={deboraAbout}
+                alt="Débora Dias — Psicóloga"
+                className="relative w-48 sm:w-56 md:w-64 rounded-2xl object-cover shadow-md"
+              />
+            </div>
           </motion.div>
 
           <motion.div

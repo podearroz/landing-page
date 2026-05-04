@@ -3,15 +3,16 @@ import {
   RiHeartLine,
   RiLeafLine,
   RiGroupLine,
-  RiSunLine,
   RiSparklingLine,
+  RiBrainLine,
+  RiEmotionSadLine,
 } from "react-icons/ri";
 
 export const PROFESSIONAL = {
   name: "Débora Dias",
   fullName: "Débora Silveira Cantão Dias Ribeiro",
   title: "Psicóloga",
-  crp: "CRP 06/181371",
+  crp: "CRP 08/46295",
   phone: "(16) 98188-6062",
   whatsapp: "5516981886062",
   instagram: "@psideboradias",
@@ -28,7 +29,7 @@ export const HERO = {
     "Atendimento psicológico online pela TCC, a abordagem com maior evidência científica da atualidade.",
   credentials: [
     `${PROFESSIONAL.crp} · Psicóloga clínica`,
-    "Especialista em TCC — Terapia Cognitivo-Comportamental",
+    "Especialista em Terapia Cognitivo-Comportamental (PUCPR)",
     "Atendimento 100% online",
   ],
   ctaText: "Agendar minha consulta",
@@ -38,7 +39,8 @@ export const ABOUT = {
   title: "Olá, sou a Débora",
   subtitle: "Psicóloga que acredita em mudanças reais.",
   paragraphs: [
-    "Trabalho com a Terapia Cognitivo-Comportamental (TCC) porque acredito em resultados concretos. Meu papel é criar um espaço seguro onde você possa entender seus padrões de pensamento e desenvolver ferramentas reais para transformar sua vida.",
+    "Sou Débora Silveira Cantão Dias Ribeiro, psicóloga clínica (CRP 08/46295). Minha prática é fundamentada no rigor das Terapias Cognitivas. Sou Especialista em Terapia Cognitivo-Comportamental (PUCPR) e possuo formação em Psicopatologia (Grupo PBE, prof. Fernanda Landeiro) — sigo em aprendizado contínuo para garantir que cada processo seja claro, personalizado e realmente transformador.",
+    "Meu papel é criar um espaço seguro onde você possa entender seus padrões de pensamento e desenvolver ferramentas reais para transformar sua vida e recuperar o protagonismo de suas escolhas.",
     "Os atendimentos são 100% online — com toda a segurança, sigilo e acolhimento que você merece, de onde você estiver.",
   ],
   ctaText: "Quero conversar",
@@ -51,28 +53,38 @@ export const BENEFITS = {
     {
       icon: RiMindMap,
       title: "Autoconhecimento",
-      description: "Entenda seus padrões de pensamento e comportamento.",
+      description:
+        "Entenda seus padrões de pensamento e comportamento. Construa uma relação mais saudável e compassiva consigo mesmo(a).",
     },
     {
       icon: RiHeartLine,
       title: "Autoestima",
       description:
-        "Construa uma relação mais saudável e compassiva com você mesmo(a).",
+        "Fortaleça sua identidade, reconheça sua história e valorize seu potencial.",
     },
     {
       icon: RiLeafLine,
-      title: "Menos ansiedade",
-      description: "Ferramentas práticas da TCC para o estresse do dia a dia.",
+      title: "Redução da ansiedade",
+      description:
+        "Aprenda a lidar com as preocupações excessivas que mantêm sua mente presa em cenários negativos, utilizando ferramentas práticas da TCC.",
+    },
+    {
+      icon: RiBrainLine,
+      title: "TDAH",
+      description:
+        "Melhore o foco e a concentração que afetam sua produtividade e lazer. Aprenda estratégias para enfrentar a procrastinação e a desorganização.",
     },
     {
       icon: RiGroupLine,
       title: "Relacionamentos",
-      description: "Vínculos mais saudáveis — com os outros e com você.",
+      description:
+        "Compreenda suas dinâmicas (amorosas, familiares ou profissionais) para fortalecer vínculos e construir conexões mais saudáveis.",
     },
     {
-      icon: RiSunLine,
-      title: "Superação",
-      description: "Processe conflitos e traumas com suporte profissional.",
+      icon: RiEmotionSadLine,
+      title: "Desafios emocionais",
+      description:
+        "Atendo experiências de estresse, ansiedade, depressão, sobrecarga e luto, oferecendo um espaço seguro para cuidar da sua saúde emocional.",
     },
     {
       icon: RiSparklingLine,
@@ -109,7 +121,7 @@ export const METHOD = {
 };
 
 export const TESTIMONIALS = {
-  title: "O que dizem por aí",
+  title: "feedbacks",
   subtitle: "Histórias reais de pessoas que deram o primeiro passo.",
   items: [
     {
@@ -145,19 +157,19 @@ export const FAQ = {
         "A TCC é a abordagem com maior respaldo científico da psicologia moderna. Ela trabalha a conexão entre pensamentos, emoções e comportamentos — identificando padrões que geram sofrimento e desenvolvendo formas mais funcionais de encarar a vida.",
     },
     {
-      question: "Os atendimentos são apenas online?",
+      question: "Qual o valor da sessão?",
       answer:
-        "Sim, atendo exclusivamente online — por videochamada, com total segurança e sigilo. Isso permite que você faça terapia de onde estiver, com mais conforto e flexibilidade na agenda.",
+        "O Conselho Federal de Psicologia não permite a divulgação pública de valores. Para receber informações sobre valores e disponibilidade de horários, entre em contato pelo WhatsApp.",
     },
     {
-      question: "Quantas sessões vou precisar?",
+      question: "Você atende plano de saúde?",
       answer:
-        "Depende das suas demandas. A TCC é uma abordagem estruturada, muitas vezes com foco em metas claras — o que a torna mais objetiva que outras abordagens. Avaliamos isso juntos na primeira consulta.",
+        "Atendimento apenas particular. No entanto, se o seu plano oferece reembolso, emito o recibo necessário para que você solicite a restituição junto ao convênio.",
     },
     {
-      question: "Meu sigilo é garantido?",
+      question: "Como funciona o acompanhamento durante a terapia?",
       answer:
-        "Sim. Tudo que é compartilhado nas sessões é protegido pelo sigilo profissional, conforme o Código de Ética dos Psicólogos. Suas informações jamais são reveladas a terceiros.",
+        "Sessões semanais via videochamada, com duração média de 50 minutos. Você precisará apenas de um ambiente tranquilo, privacidade e uma boa conexão de internet.",
     },
   ],
 };

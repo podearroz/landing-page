@@ -26,7 +26,7 @@ export function Method() {
             <motion.div
               key={step.number}
               variants={staggerItem}
-              className="bg-bg-page rounded-sm border border-ui-border p-6 md:p-8"
+              className="bg-bg-page rounded-2xl border border-ui-border p-6 md:p-8"
             >
               <span className="block font-heading text-4xl font-semibold text-primary mb-3 leading-none">
                 {step.number}

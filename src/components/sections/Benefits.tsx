@@ -28,7 +28,7 @@ export function Benefits() {
               <motion.div
                 key={item.title}
                 variants={staggerItem}
-                className="group p-7 rounded-sm border border-ui-border bg-bg-page hover:shadow-lg hover:shadow-ui-border/60 transition-all duration-300 hover:-translate-y-1"
+                className="group p-7 rounded-2xl border border-ui-border bg-bg-page hover:shadow-lg hover:shadow-ui-border/60 transition-all duration-300 hover:-translate-y-1"
               >
                 <div className="mb-4 w-12 h-12 rounded-full bg-bg-section flex items-center justify-center">
                   <Icon
