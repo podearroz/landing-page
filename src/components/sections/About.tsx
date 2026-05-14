@@ -56,9 +56,8 @@ export function About() {
                   key={index}
                   variants={staggerItem}
                   className="font-body text-sm md:text-base text-fg-muted leading-relaxed"
-                >
-                  {paragraph}
-                </motion.p>
+                  dangerouslySetInnerHTML={{ __html: paragraph }}
+                />
               ))}
             </div>
 

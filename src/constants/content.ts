@@ -39,7 +39,7 @@ export const ABOUT = {
   title: "Olá, sou a Débora",
   subtitle: "Psicóloga que acredita em mudanças reais.",
   paragraphs: [
-    "Sou Débora Silveira Cantão Dias Ribeiro, psicóloga clínica (CRP 08/46295). Minha prática é fundamentada no rigor das Terapias Cognitivas. Sou Especialista em Terapia Cognitivo-Comportamental (PUCPR) e possuo formação em Psicopatologia (Grupo PBE, prof. Fernanda Landeiro) — sigo em aprendizado contínuo para garantir que cada processo seja claro, personalizado e realmente transformador.",
+    "Sou Débora Silveira Cantão Dias Ribeiro, psicóloga clínica (CRP 08/46295). Minha prática é fundamentada no rigor das Terapias Cognitivas. Sou <strong>Especialista em Terapia Cognitivo-Comportamental</strong> (PUCPR) e possuo formação em <strong>Psicopatologia</strong> (Grupo PBE, prof. Fernanda Landeiro) — sigo em aprendizado contínuo para garantir que cada processo seja claro, personalizado e realmente transformador.",
     "Meu papel é criar um espaço seguro onde você possa entender seus padrões de pensamento e desenvolver ferramentas reais para transformar sua vida e recuperar o protagonismo de suas escolhas.",
     "Os atendimentos são 100% online — com toda a segurança, sigilo e acolhimento que você merece, de onde você estiver.",
   ],
