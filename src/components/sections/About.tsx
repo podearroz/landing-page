@@ -31,13 +31,15 @@ export function About() {
             animate={isInView ? 'visible' : 'hidden'}
             className="flex justify-center"
           >
-            <div className="relative">
-              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-2.5 translate-y-2.5" />
-              <img
-                src={deboraAbout}
-                alt="Débora Dias — Psicóloga"
-                className="relative w-48 sm:w-56 md:w-64 rounded-2xl object-cover shadow-md"
-              />
+            <div className="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-sm mx-auto">
+              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-3 translate-y-3" />
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={deboraAbout}
+                  alt="Débora Dias — Psicóloga"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </motion.div>
 
@@ -47,17 +49,26 @@ export function About() {
             animate={isInView ? 'visible' : 'hidden'}
           >
             <motion.div variants={staggerItem}>
-              <SectionTitle title={ABOUT.title} subtitle={ABOUT.subtitle} centered={false} />
+              <SectionTitle eyebrow="Conheça a psicóloga" title={ABOUT.title} subtitle={ABOUT.subtitle} centered={false} />
             </motion.div>
 
             <div className="space-y-4">
               {ABOUT.paragraphs.map((paragraph, index) => (
-                <motion.p
-                  key={index}
-                  variants={staggerItem}
-                  className="font-body text-sm md:text-base text-fg-muted leading-relaxed"
-                  dangerouslySetInnerHTML={{ __html: paragraph }}
-                />
+                index === 1 ? (
+                  <motion.blockquote
+                    key={index}
+                    variants={staggerItem}
+                    className="pl-5 border-l-4 border-primary bg-bg-section rounded-r-xl py-4 pr-5 font-body text-base md:text-lg text-fg-muted leading-relaxed italic"
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                  />
+                ) : (
+                  <motion.p
+                    key={index}
+                    variants={staggerItem}
+                    className="font-body text-base md:text-lg text-fg-muted leading-relaxed"
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                  />
+                )
               ))}
             </div>
 

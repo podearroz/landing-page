@@ -1,4 +1,5 @@
 interface SectionTitleProps {
+  eyebrow?: string
   title: string
   subtitle?: string
   centered?: boolean
@@ -6,6 +7,7 @@ interface SectionTitleProps {
 }
 
 export function SectionTitle({
+  eyebrow,
   title,
   subtitle,
   centered = true,
@@ -13,8 +15,15 @@ export function SectionTitle({
 }: SectionTitleProps) {
   return (
     <div className={`mb-10 ${centered ? 'text-center' : ''}`}>
+      {eyebrow && (
+        <p className={`font-body text-xs font-bold uppercase tracking-[0.18em] mb-3 ${
+          light ? 'text-white/50' : 'text-primary'
+        }`}>
+          {eyebrow}
+        </p>
+      )}
       <h2
-        className={`font-heading text-3xl md:text-4xl font-semibold tracking-tight leading-snug text-balance mb-3 ${
+        className={`font-heading text-4xl md:text-5xl font-bold tracking-tight leading-tight text-balance mb-3 ${
           light ? 'text-white' : 'text-secondary'
         }`}
       >
@@ -22,7 +31,7 @@ export function SectionTitle({
       </h2>
       {subtitle && (
         <p
-          className={`font-body text-base max-w-xl leading-relaxed ${
+          className={`font-body text-lg max-w-xl leading-relaxed ${
             centered ? 'mx-auto' : ''
           } ${light ? 'text-white/75' : 'text-fg-muted'}`}
         >

@@ -3,7 +3,6 @@ import {
   RiHeartLine,
   RiLeafLine,
   RiGroupLine,
-  RiSparklingLine,
   RiBrainLine,
   RiEmotionSadLine,
 } from "react-icons/ri";
@@ -53,43 +52,32 @@ export const BENEFITS = {
     {
       icon: RiMindMap,
       title: "Autoconhecimento",
-      description:
-        "Entenda seus padrões de pensamento e comportamento. Construa uma relação mais saudável e compassiva consigo mesmo(a).",
+      description: "Identifique padrões de pensamento e construa uma relação mais saudável consigo mesmo.",
     },
     {
       icon: RiHeartLine,
       title: "Autoestima",
-      description:
-        "Fortaleça sua identidade, reconheça sua história e valorize seu potencial.",
+      description: "Fortaleça sua identidade e aprenda a reconhecer seu próprio valor.",
     },
     {
       icon: RiLeafLine,
-      title: "Redução da ansiedade",
-      description:
-        "Aprenda a lidar com as preocupações excessivas que mantêm sua mente presa em cenários negativos, utilizando ferramentas práticas da TCC.",
+      title: "Ansiedade",
+      description: "Ferramentas práticas da TCC para quebrar o ciclo de preocupações excessivas.",
     },
     {
       icon: RiBrainLine,
       title: "TDAH",
-      description:
-        "Melhore o foco e a concentração que afetam sua produtividade e lazer. Aprenda estratégias para enfrentar a procrastinação e a desorganização.",
+      description: "Estratégias reais para foco, organização e menos procrastinação.",
     },
     {
       icon: RiGroupLine,
       title: "Relacionamentos",
-      description:
-        "Compreenda suas dinâmicas (amorosas, familiares ou profissionais) para fortalecer vínculos e construir conexões mais saudáveis.",
+      description: "Entenda suas dinâmicas afetivas e construa vínculos mais saudáveis.",
     },
     {
       icon: RiEmotionSadLine,
       title: "Desafios emocionais",
-      description:
-        "Atendo experiências de estresse, ansiedade, depressão, sobrecarga e luto, oferecendo um espaço seguro para cuidar da sua saúde emocional.",
-    },
-    {
-      icon: RiSparklingLine,
-      title: "Qualidade de vida",
-      description: "Retome o prazer nas pequenas coisas com mais leveza.",
+      description: "Suporte para ansiedade, depressão, estresse, sobrecarga e luto.",
     },
   ],
 };

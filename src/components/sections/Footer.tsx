@@ -22,7 +22,7 @@ export function Footer() {
 
           {/* Contact column */}
           <div>
-            <h3 className="font-body text-xs font-700 text-white/40 uppercase tracking-widest mb-4">
+            <h3 className="font-body text-xs font-bold text-white/40 uppercase tracking-widest mb-4">
               Contato
             </h3>
             <div className="space-y-3">
@@ -64,7 +64,7 @@ export function Footer() {
 
           {/* Modality column */}
           <div>
-            <h3 className="font-body text-xs font-700 text-white/40 uppercase tracking-widest mb-4">
+            <h3 className="font-body text-xs font-bold text-white/40 uppercase tracking-widest mb-4">
               Atendimento
             </h3>
             <p className="font-body text-sm text-white/70">{PROFESSIONAL.modality}</p>

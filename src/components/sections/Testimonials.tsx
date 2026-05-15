@@ -15,7 +15,7 @@ export function Testimonials() {
       className="py-14 md:py-24 bg-bg-warm"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
-        <SectionTitle title={TESTIMONIALS.title} subtitle={TESTIMONIALS.subtitle} />
+        <SectionTitle eyebrow="Relatos de pacientes" title={TESTIMONIALS.title} subtitle={TESTIMONIALS.subtitle} />
 
         <motion.div
           variants={stagger}
@@ -39,7 +39,7 @@ export function Testimonials() {
               {/* Quote */}
               <div className="flex-1">
                 <RiDoubleQuotesL size={20} className="text-ui-floral mb-2" aria-hidden="true" />
-                <blockquote className="font-body text-sm text-fg-muted leading-relaxed">
+                <blockquote className="font-body text-base text-fg-muted leading-relaxed">
                   {item.quote}
                 </blockquote>
               </div>

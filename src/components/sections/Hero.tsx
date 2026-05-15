@@ -20,13 +20,15 @@ export function Hero() {
             animate="visible"
             className="flex justify-center order-1 md:order-2"
           >
-            <div className="relative">
-              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-2.5 translate-y-2.5" />
-              <img
-                src={deboraHero}
-                alt="Débora Dias — Psicóloga"
-                className="relative w-56 sm:w-64 md:w-80 rounded-2xl object-cover shadow-md"
-              />
+            <div className="relative w-full max-w-[260px] sm:max-w-[300px] md:max-w-none mx-auto md:mx-0">
+              <div className="absolute inset-0 rounded-2xl border border-ui-floral translate-x-3 translate-y-3" />
+              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+                <img
+                  src={deboraHero}
+                  alt="Débora Dias — Psicóloga"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
             </div>
           </motion.div>
 
@@ -39,50 +41,46 @@ export function Hero() {
           >
             <motion.p
               variants={fadeInLeft}
-              className="font-body text-xs font-bold text-primary uppercase tracking-widest mb-3"
+              className="font-body text-sm font-bold text-primary uppercase tracking-widest mb-4"
             >
               Psicóloga · TCC · Online
             </motion.p>
 
             <motion.h1
               variants={fadeInLeft}
-              className="font-heading text-3xl sm:text-4xl md:text-5xl font-semibold text-secondary leading-tight text-balance mb-2"
+              className="font-heading text-5xl sm:text-6xl md:text-7xl font-bold text-secondary leading-[1.05] text-balance mb-4"
             >
               {HERO.headline}
             </motion.h1>
 
             <motion.p
               variants={fadeInLeft}
-              className="font-heading text-xl sm:text-2xl text-primary-light font-normal mb-5"
+              className="font-heading text-2xl sm:text-3xl text-primary italic font-normal mb-6"
             >
               {HERO.subheadline}
             </motion.p>
 
             <motion.p
               variants={fadeInLeft}
-              className="font-body text-sm text-fg-muted leading-relaxed mb-7"
+              className="font-body text-base text-fg-muted leading-relaxed mb-7"
             >
               {HERO.subtitle}
             </motion.p>
 
-            <motion.ul variants={stagger} className="space-y-2 mb-8">
+            <motion.div variants={stagger} className="flex flex-wrap gap-2 mb-8">
               {HERO.credentials.map((item) => (
-                <motion.li
+                <motion.span
                   key={item}
                   variants={fadeInUp}
-                  className="flex items-center gap-2.5 font-body text-sm text-secondary"
+                  className="inline-flex items-center gap-1.5 font-body text-sm font-medium text-secondary bg-bg-warm border border-ui-border rounded-full px-4 py-1.5"
                 >
-                  <RiCheckLine
-                    className="text-primary shrink-0"
-                    size={16}
-                    aria-hidden="true"
-                  />
+                  <RiCheckLine className="text-primary shrink-0" size={13} aria-hidden="true" />
                   {item}
-                </motion.li>
+                </motion.span>
               ))}
-            </motion.ul>
+            </motion.div>
 
-            <motion.div variants={fadeInUp}>
+            <motion.div variants={fadeInUp} className="flex flex-col items-start gap-3">
               <Button
                 href={PROFESSIONAL.whatsappUrl}
                 variant="primary"
@@ -91,6 +89,9 @@ export function Hero() {
               >
                 {HERO.ctaText}
               </Button>
+              <p className="font-body text-sm text-fg-subtle">
+                Atendimento 100% online · Resposta rápida pelo WhatsApp
+              </p>
             </motion.div>
           </motion.div>
         </div>

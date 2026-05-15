@@ -32,7 +32,7 @@ export function FAQ() {
                 className="w-full flex items-center justify-between gap-4 py-5 text-left cursor-pointer group"
                 aria-expanded={open === index}
               >
-                <span className="font-body text-sm font-bold text-secondary group-hover:text-primary transition-colors duration-150">
+                <span className="font-body text-base font-bold text-secondary group-hover:text-primary transition-colors duration-150">
                   {item.question}
                 </span>
                 <span className="shrink-0 text-primary" aria-hidden="true">
@@ -53,7 +53,7 @@ export function FAQ() {
                     transition={{ duration: 0.28, ease: 'easeInOut' }}
                     className="overflow-hidden"
                   >
-                    <p className="font-body text-sm text-fg-muted leading-relaxed pb-5 pr-8">
+                    <p className="font-body text-base text-fg-muted leading-relaxed pb-5 pr-8">
                       {item.answer}
                     </p>
                   </motion.div>

@@ -29,7 +29,7 @@ export function Button({
   rel,
 }: ButtonProps) {
   const base =
-    'inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-sm font-body font-700 text-sm tracking-wide transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer'
+    'inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full font-body font-bold text-base tracking-wide transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 cursor-pointer'
 
   const classes = `${base} ${variantClasses[variant]} ${className}`
 

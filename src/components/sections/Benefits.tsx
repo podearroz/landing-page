@@ -14,13 +14,13 @@ export function Benefits() {
       className="py-20 md:py-28 bg-bg-page"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
-        <SectionTitle title={BENEFITS.title} subtitle={BENEFITS.subtitle} />
+        <SectionTitle eyebrow="Por que a terapia?" title={BENEFITS.title} subtitle={BENEFITS.subtitle} />
 
         <motion.div
           variants={stagger}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-9"
         >
           {BENEFITS.items.map((item) => {
             const Icon = item.icon
@@ -28,21 +28,17 @@ export function Benefits() {
               <motion.div
                 key={item.title}
                 variants={staggerItem}
-                className="group p-7 rounded-2xl border border-ui-border bg-bg-page hover:shadow-lg hover:shadow-ui-border/60 transition-all duration-300 hover:-translate-y-1"
+                className="flex gap-4 pl-5 border-l-2 border-primary"
               >
-                <div className="mb-4 w-12 h-12 rounded-full bg-bg-section flex items-center justify-center">
-                  <Icon
-                    size={24}
-                    className="text-primary"
-                    aria-hidden="true"
-                  />
+                <Icon size={26} className="text-primary shrink-0 mt-1" aria-hidden="true" />
+                <div>
+                  <h3 className="font-heading text-2xl font-bold text-secondary mb-1.5">
+                    {item.title}
+                  </h3>
+                  <p className="font-body text-base text-fg-muted leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-semibold text-secondary mb-2">
-                  {item.title}
-                </h3>
-                <p className="font-body text-sm text-fg-muted leading-relaxed">
-                  {item.description}
-                </p>
               </motion.div>
             )
           })}

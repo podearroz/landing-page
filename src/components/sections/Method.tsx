@@ -14,7 +14,7 @@ export function Method() {
       className="py-14 md:py-24 bg-bg-section"
     >
       <div className="max-w-6xl mx-auto px-5 md:px-8">
-        <SectionTitle title={METHOD.title} subtitle={METHOD.subtitle} />
+        <SectionTitle eyebrow="Como funciona" title={METHOD.title} subtitle={METHOD.subtitle} />
 
         <motion.div
           variants={stagger}
@@ -28,14 +28,14 @@ export function Method() {
               variants={staggerItem}
               className="bg-bg-page rounded-2xl border border-ui-border p-6 md:p-8"
             >
-              <span className="block font-heading text-4xl font-semibold text-primary mb-3 leading-none">
+              <span className="block font-heading text-5xl font-bold text-primary mb-3 leading-none">
                 {step.number}
               </span>
               <div className="w-6 h-0.5 bg-primary-light mb-4" />
-              <h3 className="font-heading text-xl font-semibold text-secondary mb-2">
+              <h3 className="font-heading text-2xl font-bold text-secondary mb-2">
                 {step.title}
               </h3>
-              <p className="font-body text-sm text-fg-muted leading-relaxed">
+              <p className="font-body text-base text-fg-muted leading-relaxed">
                 {step.description}
               </p>
             </motion.div>
