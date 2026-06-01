@@ -10,7 +10,7 @@ const config: Config = {
           dark: '#7B3018',
           light: '#C4764A',
         },
-        secondary: '#1E1A14',
+        secondary: '#5A5A3C',
         'bg-page': '#EDE0D0',
         'bg-warm': '#E5D5C2',
         'bg-section': '#D9C9B3',

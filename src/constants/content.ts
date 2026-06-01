@@ -169,5 +169,5 @@ export const CTA_FINAL = {
 };
 
 export const FOOTER = {
-  credits: "Design & Engenharia",
+  credits: "Desenvolvido por Jhonatan Bandiera",
 };
