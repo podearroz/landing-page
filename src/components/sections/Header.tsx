@@ -1,10 +1,20 @@
 import { useEffect, useState } from 'react'
+import { RiMenuLine, RiCloseLine } from 'react-icons/ri'
 import { Button } from '../ui/Button'
 import { PROFESSIONAL } from '../../constants/content'
 import logoPng from '../../assets/logo.png'
 
+const NAV_LINKS = [
+  { label: 'Sobre', href: '#sobre' },
+  { label: 'Benefícios', href: '#beneficios' },
+  { label: 'Como funciona', href: '#como-funciona' },
+  { label: 'FAQ', href: '#faq' },
+  { label: 'Contato', href: '#contato' },
+]
+
 export function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 10)
@@ -28,17 +38,59 @@ export function Header() {
           />
         </a>
 
-        {/* CTA */}
-        <Button
-          href={PROFESSIONAL.whatsappUrl}
-          variant="primary"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-xs md:text-sm"
-        >
-          Agendar consulta
-        </Button>
+        {/* Nav — desktop */}
+        <nav className="hidden md:flex items-center gap-6" aria-label="Navegação principal">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="font-body text-sm text-fg-muted hover:text-primary transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-3">
+          {/* CTA */}
+          <Button
+            href={PROFESSIONAL.whatsappUrl}
+            variant="primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs md:text-sm"
+          >
+            Agendar consulta
+          </Button>
+
+          {/* Hamburger — mobile */}
+          <button
+            type="button"
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden p-2 text-secondary"
+            aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={menuOpen}
+          >
+            {menuOpen ? <RiCloseLine size={24} /> : <RiMenuLine size={24} />}
+          </button>
+        </div>
       </div>
+
+      {/* Mobile nav */}
+      {menuOpen && (
+        <nav className="md:hidden border-t border-ui-border bg-bg-page px-5 pb-4" aria-label="Navegação principal">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMenuOpen(false)}
+              className="block py-3 font-body text-sm text-fg-muted hover:text-primary transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      )}
     </header>
   )
 }

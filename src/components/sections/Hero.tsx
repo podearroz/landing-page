@@ -26,6 +26,8 @@ export function Hero() {
                 <img
                   src={deboraHero}
                   alt="Débora Dias — Psicóloga"
+                  width={1024}
+                  height={1536}
                   className="w-full h-full object-cover object-top"
                 />
               </div>

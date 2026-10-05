@@ -20,6 +20,7 @@ export function About() {
         src={logoWatermark}
         alt=""
         aria-hidden="true"
+        loading="lazy"
         className="absolute -top-4 -right-8 w-56 md:w-72 h-auto opacity-25 pointer-events-none select-none"
       />
 
@@ -37,6 +38,9 @@ export function About() {
                 <img
                   src={deboraAbout}
                   alt="Débora Dias — Psicóloga"
+                  width={1024}
+                  height={1536}
+                  loading="lazy"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
