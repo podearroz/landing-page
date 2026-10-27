@@ -22,8 +22,8 @@ export const PROFESSIONAL = {
 };
 
 export const HERO = {
-  headline: "Ansiedade, depressão ou estresse constante?",
-  subheadline: "Você merece apoio — e cuidar de si começa aqui.",
+  headline: "A Ansiedade e o TDAH estão tornando sua rotina cansativa e difícil de organizar?",
+  subheadline: "Com a Terapia Cognitivo-Comportamental (TCC), você aprende a compreender seus pensamentos, lidar melhor com as emoções e desenvolver estratégias para enfrentar os desafios do dia a dia.",
   subtitle:
     "Atendimento psicológico online pela TCC, a abordagem com maior evidência científica da atualidade.",
   credentials: [
